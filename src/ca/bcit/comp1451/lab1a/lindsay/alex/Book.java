@@ -60,7 +60,7 @@ public class Book
      */
     public void setTitle(String title)
     {
-        if (title.trim().length() > 0)
+        if (title != null && title.trim().length() > 0)
         {
             this.title = title;
         }

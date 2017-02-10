@@ -25,8 +25,8 @@ public class Date
     }
 
     /**
-     * Returns the year of the Date instance.
-     * @return year
+     * Accessor method for the year.
+     * @return year as an int
      */
     public int getYear()
     {
@@ -34,8 +34,8 @@ public class Date
     }
 
     /**
-     * Returns the month of the Date instance.
-     * @return month
+     * Accessor method for the month.
+     * @return month as an int
      */
     public int getMonth()
     {
@@ -43,8 +43,8 @@ public class Date
     }
 
     /**
-     * Returns the day of the Date instance.
-     * @return day
+     * Accessor method for the day.
+     * @return day as an int
      */
     public int getDay()
     {
@@ -52,8 +52,8 @@ public class Date
     }
 
     /**
-     * Returns the date in String format of yyyy-mm-dd
-     * @return date as yyyy-mm-dd
+     * Returns the date in the format of yyyy-mm-dd
+     * @return date as a String
      */
     public String getDate()
     {
@@ -65,7 +65,7 @@ public class Date
     }
 
     /**
-     * Set the year to this value.
+     * Mutator method for the year.
      * @param year as an int
      */
     public void setYear(int year)
@@ -74,7 +74,7 @@ public class Date
     }
 
     /**
-     * Set the month to this value.
+     * Mutator method for the month.
      * @param month as an int
      */
     public void setMonth(int month)
@@ -86,7 +86,7 @@ public class Date
     }
 
     /**
-     * Set the day to this value.
+     * Mutator method for the day.
      * @param day as an int
      */
     public void setDay(int day)

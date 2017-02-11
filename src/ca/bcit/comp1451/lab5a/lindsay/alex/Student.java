@@ -28,23 +28,7 @@ public class Student extends Person
         setMajor(major);
         setGradePointAverage(gpa);
     }
-
-    /**
-     * Constructor without student number.
-     * @param firstName Set first name to this String value.
-     * @param lastName Set last name to this String value.
-     * @param yearOfBirth Set year of birth to this int value.
-     * @param gender Set gender to this String value.
-     * @param major Set major to this String value.
-     * @param gpa Set grade point average to this double value.
-     */
-    public Student(String firstName, String lastName, int yearOfBirth, String gender, String major, double gpa)
-    {
-        super(firstName, lastName, yearOfBirth, gender);
-        setMajor(major);
-        setGradePointAverage(gpa);
-    }
-
+    
     /**
      * Accessor method for student number.
      * @return studentNumber as a String.

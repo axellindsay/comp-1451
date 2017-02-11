@@ -7,7 +7,6 @@ package ca.bcit.comp1451.lab5a.lindsay.alex;
  */
 public class BCITStudent extends Student
 {
-    private String studentNumber;
     private String campus;
 
     /**
@@ -25,18 +24,8 @@ public class BCITStudent extends Student
                        String gender, String studentNumber, String major, double gpa,
                        String campus)
     {
-        super(firstName, lastName, yearOfBirth, gender, major, gpa);
-        setStudentNumber(studentNumber);
+        super(firstName, lastName, yearOfBirth, gender, studentNumber, major, gpa);
         setCampus(campus);
-    }
-
-    /**
-     * Accessor method for student number.
-     * @return studentNumber as a String.
-     */
-    public String getStudentNumber()
-    {
-        return this.studentNumber;
     }
 
     /**
@@ -51,7 +40,7 @@ public class BCITStudent extends Student
             studentNumber.length() == 9 &&
             first.equals("A") && StringUtils.isNumeric(rest))
         {
-            this.studentNumber = first + rest;
+            super.setStudentNumber(first + rest);
         }
     }
 
@@ -105,7 +94,7 @@ public class BCITStudent extends Student
     public void printDetails()
     {
         System.out.println(getBCITStudentAndMajor(getFirstName(), getLastName(), getClass().getSimpleName(), getMajor(),
-                           this.studentNumber, this.campus) + ". " +
+                           getStudentNumber(), this.campus) + ". " +
                            getBirthDetails(checkGender(getGender()), getYearOfBirth()) + ".");
     }
 

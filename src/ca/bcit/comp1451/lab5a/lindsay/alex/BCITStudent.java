@@ -1,5 +1,7 @@
 package ca.bcit.comp1451.lab5a.lindsay.alex;
 
+import ca.bcit.comp1451.StringUtils;
+
 /**
  * Created by Alex on 2/10/2017.
  *
@@ -36,7 +38,7 @@ public class BCITStudent extends Student
     {
         String first = studentNumber.substring(0, 1).toUpperCase();
         String rest = studentNumber.substring(1);
-        if (StringUtils.checkString(studentNumber) &&
+        if (StringUtils.isValidString(studentNumber) &&
             studentNumber.length() == 9 &&
             first.equals("A") && StringUtils.isNumeric(rest))
         {

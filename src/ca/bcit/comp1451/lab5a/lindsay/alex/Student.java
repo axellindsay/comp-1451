@@ -1,5 +1,7 @@
 package ca.bcit.comp1451.lab5a.lindsay.alex;
 
+import ca.bcit.comp1451.StringUtils;
+
 /**
  * Created by Alex on 2/10/2017.
  *
@@ -44,7 +46,7 @@ public class Student extends Person
      */
     public void setStudentNumber(String studentNumber)
     {
-        if (StringUtils.checkString(studentNumber)) this.studentNumber = studentNumber;
+        if (StringUtils.isValidString(studentNumber)) this.studentNumber = studentNumber;
     }
 
     /**
@@ -62,7 +64,7 @@ public class Student extends Person
      */
     public void setMajor(String major)
     {
-        if (StringUtils.checkString(major)) this.major = major;
+        if (StringUtils.isValidString(major)) this.major = major;
     }
 
     /**

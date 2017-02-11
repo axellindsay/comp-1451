@@ -1,4 +1,4 @@
-package ca.bcit.comp1451.lab5a.lindsay.alex;
+package ca.bcit.comp1451;
 
 /**
  * Created by Alex on 2/11/2017.
@@ -12,7 +12,7 @@ public class StringUtils
      * @param s String to check.
      * @return True if valid, else false.
      */
-    public static boolean checkString(String s)
+    public static boolean isValidString(String s)
     {
         return s != null && s.trim().length() > 0;
     }
@@ -22,7 +22,7 @@ public class StringUtils
      * @param s String to format.
      * @return The capitalized and trimmed String.
      */
-    public static String formatString(String s)
+    public static String capitalizeString(String s)
     {
         s = s.trim();
         return s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase();

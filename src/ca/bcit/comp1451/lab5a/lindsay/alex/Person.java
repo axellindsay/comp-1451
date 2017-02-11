@@ -1,5 +1,7 @@
 package ca.bcit.comp1451.lab5a.lindsay.alex;
 
+import ca.bcit.comp1451.StringUtils;
+
 /**
  * Created by Alex on 2/10/2017.
  *
@@ -42,7 +44,7 @@ public class Person
      */
     public void setFirstName(String name)
     {
-        if (StringUtils.checkString(name)) this.firstName = StringUtils.formatString(name);
+        if (StringUtils.isValidString(name)) this.firstName = StringUtils.capitalizeString(name);
     }
 
     /**
@@ -60,7 +62,7 @@ public class Person
      */
     public void setLastName(String name)
     {
-        if (StringUtils.checkString(name)) this.lastName = StringUtils.formatString(name);
+        if (StringUtils.isValidString(name)) this.lastName = StringUtils.capitalizeString(name);
     }
 
     /**
@@ -99,7 +101,7 @@ public class Person
      */
     public void setGender(String gender)
     {
-        if (StringUtils.checkString(gender)) this.gender = gender.toLowerCase();
+        if (StringUtils.isValidString(gender)) this.gender = gender.toLowerCase();
     }
 
     /**
